@@ -1,6 +1,7 @@
 import { Grid, Typography, Box, Button } from "@mui/material";
 import { margin } from "@mui/system";
 import React from "react";
+import { Link } from "react-router-dom";
 
 class MainView extends React.Component {
   render() {
@@ -35,7 +36,11 @@ class MainView extends React.Component {
             I'm a brazilian located in western Canada with a bachelor's degree in Graphic Design and a little bit of work experience in UX/UI Design.
             </Typography>
             <p></p>
-            <Button variant="contained" disableElevation color="secondary" href="/portfolio/work">Check out my work</Button>
+            <Button variant="contained" disableElevation color="secondary" href="/portfolio/work">
+              <Link to='/portfolio/work' style={{textDecoration: 'none', color: 'black'}}>
+                Check out my work
+              </Link>
+            </Button>
           </Box>
 
         </Grid>

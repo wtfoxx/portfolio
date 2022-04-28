@@ -28,20 +28,22 @@ const myTheme = createTheme({
 
 function App() {
   return (
+    <Router>
     <ThemeProvider theme={myTheme} sx={{height: '100vh'}}>     
       <Navbar />
         <Box>
-          <Router>
+          
             <Routes>
               <Route exact path="/portfolio/" element={<MainView />} />
               <Route path="/portfolio/work" element={<WorkView />} />
               <Route path="/portfolio/about" element={<AboutView />} />
               <Route path="/portfolio/contact" element={<ContactView />} /> 
             </Routes>
-          </Router>
+          
         </Box>
         
     </ThemeProvider>
+    </Router>
   );
 }
 

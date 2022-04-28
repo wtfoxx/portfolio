@@ -42,8 +42,16 @@ class AboutView extends React.Component {
           ❤️ My hobbies are singing, playing videogames and watching weird videos on Youtube
           </Typography>
           <p></p>
-          <Button variant="contained" disableElevation color="secondary" Link to="/work" style={{marginRight: 10}} >Check out my work</Button>
-          <Button variant="contained" disableElevation color="primary" Link to="/contact">Contact me</Button>
+          <Button variant="contained" disableElevation color="secondary" style={{marginRight: 10}} >
+            <Link to='/portfolio/work' style={{textDecoration: 'none', color: 'black'}}>
+              Check out my work
+            </Link>    
+          </Button>
+          <Button variant="contained" disableElevation color="primary" Link to="/contact">
+          <Link to='/portfolio/contact' style={{textDecoration: 'none', color: 'white'}}>
+              Contact me
+          </Link>
+          </Button>
         </Box>
 
       </Grid>

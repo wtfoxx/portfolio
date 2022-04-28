@@ -19,22 +19,30 @@ const Navbar = () => {
           <Button href="/portfolio">
           <Typography variant='h4'>🍋</Typography>
           </Button>  
-        
           
-            
-              <Link to="/portfolio/work">work</Link>
-            
           <Button 
             sx={{ color: 'white', display: 'block', marginLeft: '2%'}}
-            href="/portfolio/about"
           >
-            About me
+            <Link to='/portfolio/work' style={{textDecoration: 'none', color: 'white'}}>
+              Work
+            </Link>
+          </Button>
+
+
+          <Button 
+            sx={{ color: 'white', display: 'block', marginLeft: '2%'}}
+          >
+            <Link to='/portfolio/about' style={{textDecoration: 'none', color: 'white'}}>
+              About me
+            </Link>
           </Button>
           <Button 
             sx={{ color: 'white', display: 'block', marginLeft: '2%'}}
             href="/portfolio/contact"
           >
-            Contact
+            <Link to='/portfolio/contact'style={{textDecoration: 'none', color: 'white'}}>
+              Contact
+            </Link>
           </Button> 
         </Toolbar>
       </Container>
