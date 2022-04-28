@@ -1,5 +1,6 @@
 import { Grid, Box, Typography, Button } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 class AboutView extends React.Component {
   render() {
@@ -41,8 +42,8 @@ class AboutView extends React.Component {
           ❤️ My hobbies are singing, playing videogames and watching weird videos on Youtube
           </Typography>
           <p></p>
-          <Button variant="contained" disableElevation color="secondary" href="/work" style={{marginRight: 10}} >Check out my work</Button>
-          <Button variant="contained" disableElevation color="primary" href="/contact">Contact me</Button>
+          <Button variant="contained" disableElevation color="secondary" Link to="/work" style={{marginRight: 10}} >Check out my work</Button>
+          <Button variant="contained" disableElevation color="primary" Link to="/contact">Contact me</Button>
         </Box>
 
       </Grid>

@@ -5,6 +5,7 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import { IconButton, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -15,26 +16,23 @@ const Navbar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           
-          <Button href="/">
+          <Button href="/portfolio">
           <Typography variant='h4'>🍋</Typography>
           </Button>  
         
-
+          
+            
+              <Link to="/portfolio/work">work</Link>
+            
           <Button 
             sx={{ color: 'white', display: 'block', marginLeft: '2%'}}
-            href="/work"
-          >
-            Work
-          </Button>
-          <Button 
-            sx={{ color: 'white', display: 'block', marginLeft: '2%'}}
-            href="/about"
+            href="/portfolio/about"
           >
             About me
           </Button>
           <Button 
             sx={{ color: 'white', display: 'block', marginLeft: '2%'}}
-            href="/contact"
+            href="/portfolio/contact"
           >
             Contact
           </Button> 

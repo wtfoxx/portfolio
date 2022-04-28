@@ -10,6 +10,7 @@ import WorkView from './WorkView';
 import AboutView from './AboutView';
 import ContactView from './ContactView';
 import { indigo, yellow, grey } from '@mui/material/colors';
+import { Link } from 'react-router-dom';
 
 
 const myTheme = createTheme({
@@ -27,20 +28,19 @@ const myTheme = createTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={myTheme}>
-      <Paper elevation={0} sx={{height: '100vh'}}>
-        <Router>
-          <Navbar />
-          <Box>
+    <ThemeProvider theme={myTheme} sx={{height: '100vh'}}>     
+      <Navbar />
+        <Box>
+          <Router>
             <Routes>
-              <Route exact path="/" element={<MainView />} />
-              <Route path="/work" element={<WorkView />} />
-              <Route path="/about" element={<AboutView />} />
-              <Route path="/contact" element={<ContactView />} /> 
+              <Route exact path="/portfolio/" element={<MainView />} />
+              <Route path="/portfolio/work" element={<WorkView />} />
+              <Route path="/portfolio/about" element={<AboutView />} />
+              <Route path="/portfolio/contact" element={<ContactView />} /> 
             </Routes>
-          </Box>
-        </Router>
-      </Paper>
+          </Router>
+        </Box>
+        
     </ThemeProvider>
   );
 }

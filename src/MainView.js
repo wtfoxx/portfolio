@@ -35,7 +35,7 @@ class MainView extends React.Component {
             I'm a brazilian located in western Canada with a bachelor's degree in Graphic Design and a little bit of work experience in UX/UI Design.
             </Typography>
             <p></p>
-            <Button variant="contained" disableElevation color="secondary" href="/work">Check out my work</Button>
+            <Button variant="contained" disableElevation color="secondary" href="/portfolio/work">Check out my work</Button>
           </Box>
 
         </Grid>
